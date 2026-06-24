@@ -1,0 +1,16 @@
+{
+  "name": "attentionos",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node scripts/verify-static.mjs",
+    "start": "node server.mjs",
+    "lint": "node --check server.mjs && node --check public/app.js && node --check src/lib/domain.js && node --check src/lib/store.js",
+    "typecheck": "node scripts/verify-static.mjs",
+    "test": "node --test tests/domain.test.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

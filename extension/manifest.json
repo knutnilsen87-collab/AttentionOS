@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "AttentionOS Pilot Capture",
+  "version": "0.1.0",
+  "description": "Captures page context for AttentionOS Digital DNA pilot scans.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Capture for AttentionOS"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ]
+}

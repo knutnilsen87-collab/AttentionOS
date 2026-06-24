@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#151716" />
+    <meta name="description" content="Personal Attention Operating System" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>AttentionOS</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <nav class="topbar" aria-label="Primary">
+            <div class="brand">
+              <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 4c5 0 9 6 9 8s-4 8-9 8-9-6-9-8 4-8 9-8Zm0 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z"/></svg>
+              </span>
+              <span><strong>AttentionOS</strong><small>Shape Your Feed. Shape Your Future.</small></span>
+            </div>
+            <span class="status">MVP pilot ready</span>
+          </nav>
+          <div class="hero-body">
+            <p class="eyebrow">Take Back Control of Your Attention</p>
+            <h1>Personal Attention Operating System</h1>
+            <p class="hero-text">Define who you want to become, scan your digital inputs, and reshape recommendations toward the goals that matter.</p>
+          </div>
+          <div class="metric-row" id="heroMetrics"></div>
+        </div>
+        <div class="hero-image" aria-label="AttentionOS visual identity"></div>
+      </section>
+
+      <section class="workspace">
+        <div class="tabs" role="tablist" aria-label="AttentionOS workspace">
+          <button class="tab active" data-tab="overview">Overview</button>
+          <button class="tab" data-tab="identity">Identity</button>
+          <button class="tab" data-tab="dna">DNA Scan</button>
+          <button class="tab" data-tab="simulator">Simulator</button>
+          <button class="tab" data-tab="reflection">Reflection</button>
+          <button class="tab" data-tab="delivery">Delivery</button>
+        </div>
+
+        <section class="panel active" id="overview"></section>
+        <section class="panel" id="identity"></section>
+        <section class="panel" id="dna"></section>
+        <section class="panel" id="simulator"></section>
+        <section class="panel" id="reflection"></section>
+        <section class="panel" id="delivery"></section>
+      </section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
