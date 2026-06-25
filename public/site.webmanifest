@@ -4,11 +4,11 @@
   "description": "Personal Attention Operating System",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f7f4ef",
-  "theme_color": "#151716",
+  "background_color": "#050506",
+  "theme_color": "#050506",
   "icons": [
     {
-      "src": "/favicon.ico",
+      "src": "/logo2.ico",
       "sizes": "48x48",
       "type": "image/x-icon"
     }

@@ -1,0 +1,47 @@
+{
+  "pack_name": "AttentionOS Full Review Pack",
+  "updated": "2026-06-25 15:30",
+  "project": "AttentionOS",
+  "project_root": "F:\\prosjekter_MAIN\\AttentionOS",
+  "review_scope": "local_mvp_scaffold",
+  "source_of_truth": "status_bundle.txt",
+  "active_runtime": "dependency_free_node_static",
+  "verification": {
+    "lint": "PASS",
+    "build": "PASS",
+    "tests": "PASS",
+    "test_count": 12,
+    "local_smoke": "PASS",
+    "browser_visual_qa": "PASS",
+    "desktop_screenshot": "docs/qa-screenshots/attentionos-desktop-2026-06-25.png",
+    "mobile_screenshot": "docs/qa-screenshots/attentionos-mobile-2026-06-25.png"
+  },
+  "critical_review_files": [
+    "server.mjs",
+    "public/app.js",
+    "public/styles.css",
+    "src/lib/domain.js",
+    "src/lib/store.js",
+    "tests/domain.test.mjs",
+    "extension/manifest.json"
+  ],
+  "implemented_since_initial_review": [
+    "json_persistence",
+    "local_session_user_boundary",
+    "privacy_consent_export_delete",
+    "consent_gated_extension_capture",
+    "api_regression_tests",
+    "github_actions_ci",
+    "double_click_launcher",
+    "premium_dark_gold_ui_pivot",
+    "self_hosted_changa_font",
+    "logo2_hero_and_icon_assets"
+  ],
+  "top_blockers_before_production": [
+    "hosted_staging_smoke",
+    "production_auth_provider",
+    "production_database_decision",
+    "monitoring_backups_rate_limits",
+    "legal_privacy_copy_review"
+  ]
+}

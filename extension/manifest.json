@@ -4,17 +4,11 @@
   "version": "0.1.0",
   "description": "Captures page context for AttentionOS Digital DNA pilot scans.",
   "permissions": ["activeTab", "scripting", "storage"],
-  "host_permissions": ["<all_urls>"],
+  "host_permissions": ["http://127.0.0.1:3000/*", "http://localhost:3000/*"],
   "action": {
     "default_title": "Capture for AttentionOS"
   },
   "background": {
     "service_worker": "service-worker.js"
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content-script.js"]
-    }
-  ]
+  }
 }

@@ -4,11 +4,12 @@ Personal Attention Operating System for aligning digital consumption with user-d
 
 ## MVP Surface
 
-- Web dashboard with Identity Builder, Digital DNA Scan, Alignment Score, Feed Simulator and Weekly Reflection.
+- Web dashboard with Identity Builder, Digital DNA Scan, Alignment Score, Feed Simulator, Weekly Reflection and Privacy controls.
 - Responsive PWA companion via `public/site.webmanifest`.
-- Browser extension scaffold in `extension/`.
+- Consent-gated browser extension capture scaffold in `extension/`.
 - API contract under `/api/v1`.
 - Shared scoring and provider-contract logic in `src/lib/domain.js`.
+- Persistent per-user pilot store at `data/attentionos-store.json` by default.
 
 ## Run Locally
 
@@ -27,6 +28,12 @@ npm test
 npm run build
 ```
 
+## Runtime Configuration
+
+- `PORT`: optional, defaults to `3000`.
+- `ATTENTIONOS_STORE_PATH`: optional, defaults to `data/attentionos-store.json`.
+- `ATTENTIONOS_MAX_BODY_BYTES`: optional, defaults to `131072`.
+
 ## Key Docs
 
 - `docs/IMPLEMENTATION_PHASES.md`
@@ -41,8 +48,9 @@ npm run build
 curl http://localhost:3000/api/v1/health
 curl http://localhost:3000/api/v1/alignment
 curl http://localhost:3000/api/v1/feed-simulator
+curl http://localhost:3000/api/v1/privacy
 ```
 
 ## Notes
 
-The current build is a pilot-ready MVP scaffold. It has no external runtime dependencies and uses an in-memory demo store so the product workflow is testable before a managed database, auth provider and production queue are selected.
+The current build is a local pilot-ready MVP scaffold. It has no external runtime dependencies, uses a JSON-backed per-user pilot store, and includes consent/export/delete controls. A hosted production release still needs a deliberate hosting and privacy review.

@@ -1,0 +1,147 @@
+AttentionOS status bundle
+Single source of truth
+Updated: 2026-06-25 15:30
+
+Project
+- Name: AttentionOS
+- Slogan: Take Back Control of Your Attention
+- Tagline: Shape Your Feed. Shape Your Future.
+- Goal: Personal Attention Operating System that aligns digital consumption with user-defined identity, focus areas, passions and discovery level.
+
+Repository
+- Local path: F:\prosjekter_MAIN\AttentionOS
+- Git remote: https://github.com/knutnilsen87-collab/AttentionOS.git
+- Current pushed commit: ad7bf6d Build AttentionOS MVP
+- Branch: master
+- Continuation pack: Project_Continuation_Completion_Pack_Ultimate/
+- Full review pack: Review_Pack_AttentionOS/
+- Code audit pack: Code_Audit_Pack_AttentionOS/
+
+Current implementation status
+- Phase 1 - Specification lock: DONE
+- Phase 2 - Repo and platform foundation: DONE
+- Phase 3 - Core domain and onboarding: DONE
+- Phase 4 - Digital DNA data ingestion: DONE
+- Phase 5 - Alignment score and dashboard: DONE
+- Phase 6 - AI/recommendation features: DONE
+- Phase 7 - Pilot hardening: DONE
+
+Implemented MVP
+- Dependency-free Node server in server.mjs.
+- Static responsive web app in public/index.html, public/app.js and public/styles.css.
+- Premium dark-mode UI pivot with gold logo system, liquid-glass panels and minimalist tabs.
+- Self-hosted Changa font files in public/fonts/.
+- logo2.png used as the hero visual and logo2.ico used as favicon/app icon.
+- Shared domain/scoring logic in src/lib/domain.js.
+- JSON-backed per-user pilot store in src/lib/store.js.
+- API namespace under /api/v1.
+- PWA manifest in public/site.webmanifest.
+- Consent-gated browser extension capture scaffold in extension/.
+- Project docs in docs/.
+- Domain/API/extension tests in tests/.
+
+Main user-facing features
+- Identity Builder.
+- Focus areas and weighted focus profile.
+- Discovery level control.
+- Digital DNA Scan with add-source workflow.
+- Attention Alignment Score.
+- Attention map and drift risk detection.
+- Feed Simulator with core, stretch and reduce lanes.
+- Weekly AI Reflection with insight, correction and next actions.
+- Privacy consent, export and delete/reset controls.
+- Local session/user boundary using cookie or x-attentionos-user header.
+- Delivery/status view for the 7 implementation phases.
+
+API contract
+- GET /api/v1/health
+- GET /api/v1/session
+- POST /api/v1/session
+- GET /api/v1/profile
+- PATCH /api/v1/profile
+- GET /api/v1/content-scan
+- POST /api/v1/content-scan
+- GET /api/v1/alignment
+- GET /api/v1/feed-simulator
+- GET /api/v1/reflection
+- GET /api/v1/privacy
+- PATCH /api/v1/privacy
+- GET /api/v1/export
+- DELETE /api/v1/user-data
+- POST /api/v1/provider/verify
+- GET /api/v1/jobs
+- POST /api/v1/jobs
+- POST /api/v1/jobs/transition
+
+Verification status
+- npm run lint: PASS
+- npm run build: PASS
+- npm test: PASS, 12 tests
+- API smoke: PASS
+- HTML smoke: PASS
+- Browser visual QA: PASS, desktop and mobile screenshots in docs/qa-screenshots/
+- Asset smoke: PASS, versioned CSS, logo2.png, logo2.ico and Changa font served correctly
+- Last known launcher base port: http://127.0.0.1:48317
+
+How to run
+- Command: npm run dev
+- Default URL: http://localhost:3000
+- If another server already uses 3000, set PORT before running.
+
+How to verify
+- npm run lint
+- npm run build
+- npm test
+
+Important implementation decision
+- The first attempt used Next.js scaffolding, but npm/package-manager installation became unstable on this Windows workspace and left partial node_modules states.
+- The final MVP intentionally uses no external runtime dependencies.
+- This keeps the pilot runnable with plain Node and avoids blocking project progress on package installation.
+
+Tracked docs
+- docs/IMPLEMENTATION_PHASES.md
+- docs/API_CONTRACT.md
+- docs/DATA_MODEL.md
+- docs/QA_RELEASE_GATE.md
+- docs/LOCAL_SETUP.md
+- Project_Continuation_Completion_Pack_Ultimate/README_MASTER.md
+- Project_Continuation_Completion_Pack_Ultimate/02_REALITY_CHECK/CURRENT_STATE_AUDIT.md
+- Project_Continuation_Completion_Pack_Ultimate/07_COMPLETION_PLAN/NEXT_30_ACTIONS.md
+- Review_Pack_AttentionOS/README_REVIEW_PACK.md
+- Review_Pack_AttentionOS/10_REVIEW_CHECKLIST.md
+- Review_Pack_AttentionOS/11_REVIEW_FINDINGS_TEMPLATE.md
+- Review_Pack_AttentionOS/13_UI_UX_PREMIUM_PIVOT_2026-06-25.md
+- Code_Audit_Pack_AttentionOS/README_CODE_AUDIT_PACK.md
+- Code_Audit_Pack_AttentionOS/02_AUDIT_FINDINGS.md
+- Code_Audit_Pack_AttentionOS/08_REMEDIATION_PLAN.md
+- Code_Audit_Pack_AttentionOS/12_UI_UX_ASSET_AUDIT_2026-06-25.md
+- docs/qa-screenshots/attentionos-desktop-2026-06-25.png
+- docs/qa-screenshots/attentionos-mobile-2026-06-25.png
+
+Latest action
+- 2026-06-25: Filled Project_Continuation_Completion_Pack_Ultimate from F:\prosjekter_MAIN\WorkFlow\Project_Continuation_Completion_Pack_Ultimate.zip and placed it in repo root.
+- 2026-06-25: Created Review_Pack_AttentionOS for full developer-team app review.
+- 2026-06-25: Created Code_Audit_Pack_AttentionOS with code-level findings and remediation plan.
+- 2026-06-25: Implemented audit fixes, persistent per-user JSON store, local session boundary, privacy consent/export/delete, consent-gated extension capture, API/extension tests, CI workflow and pilot deployment docs.
+- 2026-06-25: Implemented UI/UX premium pivot: dark/gold design tokens, self-hosted Changa, logo2 hero/favicon assets, glass panels, gold progress bars, minimal tabs and desktop/mobile screenshot QA.
+
+Local files intentionally not committed
+- AttentionOS_Prework_Filled(1).zip
+- dok/
+- 3bbd71d3-4ad7-4b9e-aab0-3e1af331d5ca.jpg
+- grok-image-2edf765b-f178-4683-95e4-9f643d7ede06.jpg
+
+Ignored/generated local cleanup items
+- node_modules/
+- .bad-node_modules*
+- .deps/
+- .empty-node-modules/
+- next-env.d.ts
+- tsconfig.tsbuildinfo
+
+Next recommended work
+- Run hosted staging deployment using docs/PILOT_DEPLOYMENT_PLAN.md.
+- Perform manual extension pilot smoke in Chrome/Edge with consent enabled.
+- Replace JSON pilot store with production database if multi-user hosted pilot grows.
+- Add production monitoring, backups and rate limiting.
+- Review privacy/legal language before real user data collection.

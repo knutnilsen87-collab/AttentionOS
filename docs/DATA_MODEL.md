@@ -41,3 +41,16 @@ Allowed states:
 - `blocked_contract_mismatch`
 
 Allowed transitions are defined in `src/lib/domain.js`.
+
+## PrivacySettings
+
+- `consentGranted`: whether the user consents to approved page-context capture.
+- `captureEnabled`: whether extension capture is currently active.
+- `allowedFields`: capture fields allowed by the current policy.
+- `retentionDays`: local pilot retention value.
+- `updatedAt`: last privacy settings update timestamp.
+
+## Persistence
+
+The local pilot store is JSON-backed by default at `data/attentionos-store.json`.
+Set `ATTENTIONOS_STORE_PATH` to move it to a durable mounted volume for staging.

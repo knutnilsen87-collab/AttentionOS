@@ -1,0 +1,58 @@
+PROJECT_NAME=AttentionOS
+PROJECT_ROOT=F:\prosjekter_MAIN\AttentionOS
+PROJECT_TYPE=in_progress_project
+SOURCE_OF_TRUTH=status_bundle.txt
+WORKFLOW_MODE=PASTE_DIRECTLY_IN_POWERSHELL
+STATUS_BUNDLE_IS_PRIMARY_DOCUMENT=true
+PROJECT_STATE_CONFIDENCE=HIGH_FOR_LOCAL_MVP_LOW_FOR_PRODUCTION
+LAST_UPDATED=2026-06-25
+CURRENT_PHASE=Continuation pack filled
+LAST_ACTION=Filled Project_Continuation_Completion_Pack_Ultimate in repo root
+LAST_RESULT=PASS
+NEXT_ACTION=Commit filled pack and update status_bundle.txt after verification
+BUILD_STATUS=PASS
+COMPILE_STATUS=PASS
+RUNTIME_STATUS=PASS_LOCAL_SMOKE
+DB_STATUS=UNKNOWN
+AUTH_STATUS=NOT_IMPLEMENTED
+TEST_STATUS=PASS
+CI_STATUS=UNKNOWN
+VERIFICATION_LEVEL=LOCAL_MVP_VERIFIED
+TOP_BLOCKER=Persistence auth consent privacy and real extension capture are not implemented
+RISKS=Prototype may be mistaken for production-ready; dependency folders are generated/fragile; real user data requires privacy controls
+NOTES=Current runtime has no external npm dependencies; use status_bundle.txt as primary source of truth
+
+MACHINE_READABLE_JSON_BEGIN
+{
+  "project_name": "AttentionOS",
+  "project_root": "F:\\prosjekter_MAIN\\AttentionOS",
+  "project_type": "in_progress_project",
+  "source_of_truth": "status_bundle.txt",
+  "workflow_mode": "paste_directly_in_powershell",
+  "status_bundle_is_primary_document": true,
+  "project_state_confidence": "HIGH_FOR_LOCAL_MVP_LOW_FOR_PRODUCTION",
+  "last_updated": "2026-06-25",
+  "current_phase": "Continuation pack filled",
+  "last_action": "Filled Project_Continuation_Completion_Pack_Ultimate in repo root",
+  "last_result": "PASS",
+  "next_action": "Commit filled pack and update status_bundle.txt after verification",
+  "build_status": "PASS",
+  "compile_status": "PASS",
+  "runtime_status": "PASS_LOCAL_SMOKE",
+  "db_status": "UNKNOWN",
+  "auth_status": "NOT_IMPLEMENTED",
+  "test_status": "PASS",
+  "ci_status": "UNKNOWN",
+  "verification_level": "LOCAL_MVP_VERIFIED",
+  "top_blocker": "Persistence auth consent privacy and real extension capture are not implemented",
+  "risks": [
+    "Prototype may be mistaken for production-ready",
+    "Generated dependency folders are fragile",
+    "Real user data requires privacy controls"
+  ],
+  "notes": [
+    "Current runtime has no external npm dependencies",
+    "Use status_bundle.txt as primary source of truth"
+  ]
+}
+MACHINE_READABLE_JSON_END

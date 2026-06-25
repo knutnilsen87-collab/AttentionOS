@@ -1,0 +1,49 @@
+{
+  "pack_name": "AttentionOS Code Audit Pack",
+  "updated": "2026-06-25 15:30",
+  "project": "AttentionOS",
+  "scope": "active_local_mvp_code",
+  "verification": {
+    "lint": "PASS",
+    "build": "PASS",
+    "tests": "PASS",
+    "test_count": 12,
+    "local_smoke": "PASS",
+    "browser_visual_qa": "PASS",
+    "asset_smoke": "PASS"
+  },
+  "audited_files": [
+    "server.mjs",
+    "public/app.js",
+    "public/index.html",
+    "public/styles.css",
+    "src/lib/domain.js",
+    "src/lib/store.js",
+    "tests/domain.test.mjs",
+    "scripts/verify-static.mjs",
+    "extension/manifest.json",
+    "extension/content-script.js",
+    "extension/service-worker.js",
+    "public/fonts/changa-400.ttf",
+    "public/fonts/changa-500.ttf",
+    "public/fonts/changa-600.ttf",
+    "public/fonts/changa-700.ttf",
+    "public/fonts/changa-800.ttf",
+    "public/logo2.png",
+    "public/logo2.ico"
+  ],
+  "finding_counts": {
+    "P0_open": 0,
+    "P1_open": 0,
+    "P2_open": 3,
+    "remediated": 8,
+    "P3": 0
+  },
+  "top_remaining_findings": [
+    "Domain scoring formula is uncalibrated",
+    "Committed browser/UI automation tests are missing",
+    "Production auth/database/monitoring are missing"
+  ],
+  "audit_verdict": "local_pilot_blockers_remediated_production_hardening_still_required",
+  "remediation_status": "11_REMEDIATION_STATUS_2026-06-25.md"
+}

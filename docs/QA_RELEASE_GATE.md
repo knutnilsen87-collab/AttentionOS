@@ -16,6 +16,17 @@
 5. Add a consumed source in DNA Scan.
 6. Confirm score, category minutes and reflection update.
 7. Check `/api/v1/health`, `/api/v1/alignment`, `/api/v1/feed-simulator`.
+8. Check privacy consent, export and delete/reset.
+9. Check extension capture is rejected before consent and accepted after consent.
+
+## Current Regression Tests
+
+- Static traversal is blocked.
+- Malformed JSON returns 400.
+- Oversized body returns 413.
+- Extension capture requires consent.
+- Profile data persists across server restart.
+- Export/delete reset user data.
 
 ## Definition of Done
 

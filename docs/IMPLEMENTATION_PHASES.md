@@ -1,6 +1,6 @@
 # AttentionOS Implementation Phases
 
-Status: implemented as MVP scaffold on 2026-06-24.
+Status: implemented as local pilot-ready MVP scaffold on 2026-06-25.
 
 ## Phase 1 - Specification lock
 
@@ -14,7 +14,7 @@ Status: implemented as MVP scaffold on 2026-06-24.
 - Dependency-free Node server in `server.mjs`.
 - API namespace at `/api/v1`.
 - Shared domain logic in `src/lib/domain.js`.
-- In-memory pilot store in `src/lib/store.js`.
+- JSON-backed per-user pilot store in `src/lib/store.js`.
 - PWA manifest in `public/site.webmanifest`.
 
 ## Phase 3 - Core domain and onboarding
@@ -26,6 +26,7 @@ Status: implemented as MVP scaffold on 2026-06-24.
 
 - Demo consumption dataset is included.
 - Users can add consumed sources in the dashboard.
+- Browser extension capture is user-triggered and consent-gated.
 - API supports append or replace scan data through `/api/v1/content-scan`.
 
 ## Phase 5 - Alignment score and dashboard
@@ -41,6 +42,6 @@ Status: implemented as MVP scaffold on 2026-06-24.
 
 ## Phase 7 - Pilot hardening
 
-- Node unit tests cover scoring, DNA analysis, provider contract and worker transitions.
+- Node unit tests cover scoring, DNA analysis, provider contract, worker transitions, API safety, persistence, privacy and extension manifest behavior.
 - Accessibility basics: semantic controls, visible focus states, responsive layout and real labels.
-- Security minimum: no secrets in repo, `/api/v1` validation with canonical error responses, provider verify gate.
+- Security minimum: no secrets in repo, `/api/v1` validation with canonical error responses, provider verify gate, body limits, invalid JSON handling, static traversal guard, local user boundary and privacy controls.

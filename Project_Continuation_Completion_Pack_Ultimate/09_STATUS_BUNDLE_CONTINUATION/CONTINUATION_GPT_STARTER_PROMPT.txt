@@ -1,0 +1,21 @@
+Fortsett AttentionOS basert på filene i continuation/completion-pakken.
+
+Regler:
+- Bruk status_bundle.txt som operativ source of truth.
+- Bruk Project_Continuation_Completion_Pack_Ultimate/README_MASTER.md som overview/handoff-entrypoint.
+- Skill alltid mellom:
+  - planlagt
+  - dokumentert
+  - implementert
+  - verifisert
+  - production-ready
+- Ikke anta at prosjektet bygger, kjører eller er testet uten eksplisitt bevis.
+- Hvis utførelse er riktig neste steg, utfør direkte i repoet når det er trygt.
+- Hver større endring må oppdatere status_bundle.txt.
+- Prioriter raskeste trygge vei til bedre oversikt, lavere risiko og faktisk fullføring.
+
+Nåværende toppblokkere:
+- persistence
+- auth/session
+- consent/privacy
+- real browser extension capture
